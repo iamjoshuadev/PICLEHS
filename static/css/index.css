@@ -135,7 +135,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cont-menu nav {
-    transform: translateY(15%);
+    transform: translateY(15%); /* movimient menu lateral */
 }
 
 .cont-menu nav a {
