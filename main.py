@@ -1,7 +1,9 @@
-from flask import Flask, render_template
+from flask import Flask, render_template #importando flask y render template
 
-app = Flask(__name__)
+app = Flask(__name__)  #declarando el app para crear rutas
 
+
+# rutas del proyecto
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -14,7 +16,7 @@ def empres():
 def desarrolladores():
     return render_template('gx-desa/desarrolladores.html')
 
-@app.errorhandler(404)
+@app.errorhandler(404) #ruta error 404
 def  page_not_found(e):
     return render_template("error404.html")
 
