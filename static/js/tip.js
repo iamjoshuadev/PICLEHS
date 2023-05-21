@@ -4,4 +4,4 @@ var typeds = new Typed('.typeds', {
     backSpeed: 40,
     smartBackspace: false,
     loop: true
-});
+});// constante del header del encargados efecto escritura
