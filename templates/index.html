@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- HTML -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="shortcut icon" href="../static/img/LogoP.jpg" type="image/x-icon">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="../static/js/main.load.js"></script>
+    <title>Pasantía e involucración con las empresas y horas sociales</title>
+</head>
+
+<body>
+    <!-- header y menu -->
+    <div class="header" id="menu">
+        <div class="containert">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+                <!--btn menu lateral -->
+            </div>
+            <div class="logo">
+                <h1>PICLEHS</h1>
+            </div>
+            <nav class="menu">
+                <!-- menu normal -->
+                <a href="/#inicio">Inicio</a>
+                <a href="/#encarga">Encargados</a>
+                <a href="/#horario">Horarios</a>
+                <a href="/#emp">Empresas</a>
+            </nav>
+        </div>
+    </div>
+    <div class="capa"></div>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <h2 class="th">Contactos del centro</h2>
+                <a href="https://www.facebook.com/profile.php?id=100063508002864" target="_blank"> <box-icon
+                        name='facebook' type='logo' color='#ffffff'></box-icon> Facebook</a>
+                <a href="https://www.instagram.com/cemas_1963/" target="_blank"><box-icon type='logo' name='instagram'
+                        color="#ffff"></box-icon> Instagram</a>
+                <h2 class="th">Desarrollo del proyecto</h2>
+                <a href="/gx-desa">Desarrolladores</a>
+                <a href="https://github.com/iamjoshuadev/PICLEHS" target="_blank">GitHub del proyecto</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+    {%block contenido%}
+    <div class="modal" id="modal">
+        <div class="div-container-modal">
+            <div class="titulo-modal">
+                <h1>¡Atención!</h1>
+            </div>
+            <div class="text-modal">
+                <p style="color: #000;">Esta Página está hecha con fines Educativos</p>
+            </div>
+            <div class="cerrar">
+                <button class="cerr" title="Cerrar" id="close">x</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <header class='h' id='inicio'>
+            <div class='div-header'>
+                <span class="typed titulo1"></span>
+                <h1 class="titulo2">Bienvenid@s!</h1>
+            </div>
+        </header>
+        <div class="contenido-explicacion">
+            <main>
+                <div class="definiciones">
+                    <div class="pasantia">
+                        <h2>¿Qué es una pasantía?</h2>
+                        <p class="def">
+                            La pasantía es un periodo en el que los estudiantes (a los que llamaremos pasantes), al
+                            final de sus años de formación, realizan prácticas profesionales durante un periodo de
+                            tiempo determinado en empresas de distintos sectores, con el objetivo de ganar experiencia
+                            en el mundo laboral.
+                        </p>
+                    </div>
+                    <div class="imgs">
+                        <img class="imgin" src="../static/img/inicio.svg" alt="">
+                    </div>
+                </div>
+            </main>
+            <div class="pq">
+                <h2>¿Por qué se envían estudiantes a Pasantías?</h2>
+                <p>
+                    Se envían a los <b>Estudiantes</b> o <b>Alumnos</b> a las pasantías para que adquieran experiencias,
+                    avalar los conocimientos teóricos adquiridos y familiarizarse con las estrategias y modalidades de
+                    trabajo en las organizaciones y con sus necesidades.
+                </p>
+                <div class="imgs">
+                    <img class="imgin" src="../static/img/inicio2.svg" alt="">
+                </div>
+            </div>
+            <div class="h-s">
+                <h2>
+                    ¿Qué son las horas sociales?
+                </h2>
+                <div class="cont-h-s">
+                    <p>
+                        Las Horas sociales no son más que un servicio social que se hacen sin fines de lucro, Ejemplos:
+                        ayudar en una escuela, ayudar en un hospital,etc.
+                    </p>
+                    <div class="imgs">
+                        <img class="imgin" src="../static/img/inicio3.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='container-tainer'>
+            <div class="header-container" id="encarga">
+                <div class="bacimg">
+                    <span class="typeds titulo1"></span>
+                </div>
+            </div>
+            <h1 class="titulo-area">Encargad@s de las pasantías e involucración con las empresas.</h1>
+            <div class="container__card">
+
+                <div class="card__father">
+                    <div class="card">
+                        <div class="card__front"
+                            style="background-image: url(../static/img/encargados/osvaldo\ lopez.jpg);">
+                            <div class="bg"></div>
+                            <div class="body__card_front">
+                                <h1>Osvaldo Lopez</h1>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <div class="body__card_back">
+                                <h1>Osvaldo Lopez</h1>
+                                <p>Encargado de las pasantías e involucración con las empresas y maestro en el área
+                                    técnica “Servicios gastronómicos”.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__father">
+                    <div class="card">
+                        <div class="card__front" style="background-image: url(../static/img/encargados/malleline.png);">
+                            <div class="bg"></div>
+                            <div class="body__card_front">
+                                <h1>Malleline Gutierrez</h1>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <div class="body__card_back">
+                                <h1>Malleline Gutierrez</h1>
+                                <p>Encargada de las pasantías e involucración con las empresas y maestra de educación
+                                    artística.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenidof">
+                    <h1 class="titulo-area">Encargad@s de las horas sociales</h1>
+                    <div class="contenedort">
+                        <div class="card__father">
+                            <div class="card">
+                                <div class="card__front"
+                                    style="background-image: url(../static/img/encargados/socorro.jpg);">
+                                    <div class="bg"></div>
+                                    <div class="body__card_front">
+                                        <h1>Socorro Mendez</h1>
+                                    </div>
+                                </div>
+                                <div class="card__back">
+                                    <div class="body__card_back">
+                                        <h1>Socorro Mendez</h1>
+                                        <p>Asignada en el área de coordinación.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card__father">
+                            <div class="card">
+                                <div class="card__front"
+                                    style="background-image: url(../static/img/encargados/breisy.png);">
+                                    <div class="bg"></div>
+                                    <div class="body__card_front">
+                                        <h1>Breisi Angeles</h1>
+                                    </div>
+                                </div>
+                                <div class="card__back">
+                                    <div class="body__card_back">
+                                        <h1>Breisi Angeles</h1>
+                                        <p>Asignada en el área de coordinación.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="horario" id="horario">
+            <div class="text-hora">
+                <div class="ft">
+                    <h1>Horario semanal de los estudiantes que asisten a las pasantías</h1>
+                    <p class="pe">Recordar que la hora de llegada de los estudiantes que asistes a las pasantías depende
+                        del horario de las empresas en las cuales harán las pasantías.</p>
+                </div>
+                <img src="../static/img/calendario.jpg" alt="">
+            </div>
+            <div class="hora">
+                <h1>Horarios:</h1>
+                <div class="dia control">
+                    <div class="contp pp">
+                        <h2 class="cabecera c">Día</h2>
+                        <p>Lunes</p>
+                        <p>Martes</p>
+                        <p>Miercoles</p>
+                        <p>Jueves</p>
+                        <p>Viernes</p>
+                    </div>
+                </div>
+                <div class="tecnico control">
+                    <div class="pp">
+                        <h2 class="cabecera">Técnico</h2>
+                        <p>Mercadeo.(6.º C)</p>
+                        <p>Servicio gastronómico.(6.º E)</p>
+                        <p>Gestión tributaria y administrativa.(6.º A)</p>
+                        <p>Desarrollo de aplicaciones de sistemas informáticos.(6.º B)</p>
+                        <p>Instalaciones Electricas.(6.º F)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="empresas" id="emp">
+            <div class="empress-descripcion">
+                <div class="inid">
+                    <div class="p">
+                        <img src="../static/img/Empresas/empresas.svg" alt="img">
+                        <div class="dado">
+                            <h1>Empresas a las que asisten los estudiantes a las pasantías y a las horas sociales.</h1>
+                            <p>Para asistir a las pasantias hay requisitos loas cuales son los siguientes:</p>
+                        </div>
+                    </div>
+                    <h2 class="req">Requisitos para que los estudiantes asistan a las pasantías.</h2>
+                    <ol class="requisitos">
+                        <li>Tener Cédula de menor de edad</li>
+                        <li>Acta de nacimiento</li>
+                        <li>Estar en 6.º de bachillerato</li>
+                    </ol>
+                    <h2 class="req">Requisitos para que los estudiantes cumplan las horas sociales.</h2>
+                    <ol class="requisitos">
+                        <li>Buscar una empresa sin fines de lucro(Empresas que no persiguen beneficios)</li>
+                        <li>Registro de las horas sociales (Es un papel donde se registran las horas y se confirma que el estudiante si cumplió, esta debe contener la firma de la empresa).</li>
+                        <li>Estar en 6.º de bachillerato</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="lista-empresa">
+                <h2>Lista de las empresas</h2>
+                <p class="descrip">A continuación Vera la lista de empresas a las que los estudiantes asisten a sus
+                    pasantías</p>
+                <div class="lista">
+                    <ol>
+                        <h3>6.º A</h3>
+                        <li>Farmacia Allan,SRL.</li>
+                        <li>Cooperativa a Vicola Nacional</li>
+                        <li>Hospital Municipal DR.Juan ANT.Castillo</li>
+                        <li>Cemeve.</li>
+                        <li>Grupo Agropecuario Don Julio SRL.</li>
+                        <li>Almacen y Supermercado Yeison</li>
+                        <li>Dominicana Compañia de seguros</li>
+                        <li>Ayuntamiento villa Cutupu</li>
+                        <li>Cooperativa Vega Real</li>
+                    </ol>
+                    <ol>
+                        <h3>6.º B</h3>
+                        <li>Farmacia Allan,SRL.</li>
+                        <li>Hospital Municipal DR.Juan ANT.Castillo</li>
+                        <li>JYF Computer</li>
+                        <li>Ferreteria Rodriguez Guzman</li>
+                        <li>Cincinnatus</li>
+                    </ol>
+                    <ol>
+                        <h3>6.º C</h3>
+                        <li>Industrias Tucán SRL.</li>
+                        <li>Centro diagnostico avanzado (CDA).</li>
+                        <li>2G Inversiones SRL.</li>
+                        <li>Importadora Fidodido SRL.</li>
+                        <li>Farmacia Allan SRL.</li>
+                        <li>Corredom SRL</li>
+                        <li>Supermercado Lora</li>
+                        <li>Electromuebles Fanelis</li>
+                        <li>Electromuebles Abreu Fernandez</li>
+                        <li>Genial Sense SRL.</li>
+                        <li>Importadores Reales</li>
+                        <li>Cooperativa Vega Real</li>
+                    </ol>
+                </div>
+                <div class="lista">
+                    <ol>
+                        <h3>6.º E</h3>
+                        <li>Nutribel</li>
+                        <li>Parador Valdez</li>
+                        <li>Reposteria el Poly</li>
+                        <li>Cocinita de Isaac.</li>
+                        <li>Don D' Noel Restaurant</li>
+                        <li>Cocina Restaurant Bueno Ortiz</li>
+                        <li>La Volanta SRL</li>
+                        <li>Loly Reposteria</li>
+                        <li>Lite Lounge Restaurant</li>
+                        <li>Panaderia Papi Pan</li>
+                    </ol>
+                    <ol>
+                        <h3>6.º F</h3>
+                        <li>Warn Electrical</li>
+                        <li>Procesos y Envasados de Abeto SRL.</li>
+                        <li>IGTEC</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <h4 class="socioh">Las empresas a las que el estudiante puede asistir para cumplir las 60 horas sociales son aquellas sin fines de lucro.</h4>
+    </div>
+    {%endblock%}
+    <footer>
+        <div class="footer">
+            <ul>
+                <a href="/#inicio">
+                    <h2 style="color: #fff;">Inicio</h2>
+                </a>
+                <li><a href="/#encarga">Encargad@s</a></li>
+                <li><a href="/#emp">Empresas de las pasantías y horas sociales</a></li>
+            </ul>
+            <ul class="ul2">
+                <h2 style="color: #fff;">Horarios</h2>
+                <li><a href="/#horario">Horario de las pasantías</a></li>
+            </ul>
+            <ul class="logs">
+                <div class="cent">
+                    <img src="../static/img/images.png" alt="">
+                </div>
+                <div class="group">
+                    <a href="/gx-desa">
+                        <img src="../static/img/LogoP.jpg" alt="Logo" title="Click aquí para ver a los desarrolladores">
+                    </a>
+                </div>
+            </ul>
+        </div>
+        <p class="textfooter">Desarrollado por el equipo <a href="/gx-desa"
+                title="Click aquí para ver a los desarrolladores">PICLEHS.</a></p>
+    </footer>
+    <script src="../static/js/typed.umd.js"></script>
+    <script src="../static/js/tip.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,875 @@
+/*Configuracion Universal y fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* Efecto suave de scroll */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Variabbles*/
+
+:root {
+    --var1: rgb(255, 2356, 0);
+    --Open: sans-serif;
+    --azul-logo: rgb(28, 89, 146);
+    --blanco: #ffff;
+}
+
+/* Pesonalizacion de la barra de escroll */
+body::-webkit-scrollbar {
+    background-color: #797979;
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--azul-logo);
+    border-radius: 20px;
+    border: 1px solid #f1f2f3;
+}
+
+/* header y menu de la pagina principal */
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #333;
+}
+
+.containert {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.containert .btn-menu,
+.logo {
+    float: left;
+    line-height: 100px;
+}
+
+.containert .btn-menu label {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.logo h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.containert .menu {
+    float: right;
+    line-height: 100px;
+}
+
+.containert .menu a {
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.containert .menu a:hover {
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+
+/*Menù lateral*/
+#btn-menu {
+    display: none;
+    z-index: 3;
+}
+
+.container-menu {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 3;
+}
+
+#btn-menu:checked~.container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#btn-menu:checked~.container-menu .cont-menu {
+    transform: translateX(0%);
+}
+
+.cont-menu nav {
+    transform: translateY(15%);
+}
+
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#btn-menu {
+    display: none;
+}
+
+.container-menu {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked~.container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#btn-menu:checked~.container-menu .cont-menu {
+    transform: translateX(0%);
+}
+
+.cont-menu nav {
+    transform: translateY(15%);
+}
+
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.th {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Heder-inicio*/
+
+.div-header {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+.h {
+    background-image: url(../img/fondo-header.jpg);
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 250px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 50px;
+    /* width: 100%; */
+}
+
+.titulo2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 250px;
+    color: #fff;
+    font-family: sans-serif;
+    /* width: 100%; */
+}
+
+
+.h2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    background-color: rgb(14, 13, 13);
+    color: #fff;
+    padding: 40px;
+}
+
+.footer {
+    display: flex;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer ul {
+    list-style: none;
+    padding-right: 50px;
+}
+
+footer .ul2 {
+    padding-right: 10px;
+}
+
+footer ul li {
+    margin: 10px;
+}
+
+footer ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logs img {
+    width: 150px;
+}
+
+.logs {
+    display: flex;
+    margin-left: 250px;
+}
+
+.cent {
+    margin: 20px;
+}
+
+.cent img {
+    border-radius: 50%;
+}
+
+.group {
+    margin: 20px;
+}
+
+.group img {
+    border-radius: 50px;
+}
+
+.textfooter {
+    color: #7e7e7e;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textfooter1 {
+    color: #7e7e7e;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textfooter a {
+    color: #7e7e7e;
+}
+
+/*Div de contenido-inicio*/
+
+.contenido-explicacion {
+    padding: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    margin: auto;
+    width: 900px;
+}
+
+.pasantia h2 {
+    text-align: center;
+    margin: 100px;
+}
+
+.pq h2 {
+    text-align: center;
+    margin: 100px;
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.imgin {
+    width: 500px;
+    margin: 50px;
+}
+
+.h-s h2 {
+    text-align: center;
+    margin: 100px;
+}
+
+.cont-h-s {
+    text-align: justify;
+    padding: 10px;
+}
+
+
+/* Modal */
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    /* position: ; */
+    position: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 7s ease;
+    color: #000;
+}
+
+.div-container-modal {
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.oculto {
+    display: none;
+}
+
+.titulo-modal {
+    display: flex;
+}
+
+.cerr {
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    background-color: red;
+    cursor: pointer;
+    margin: 15px;
+}
+
+
+
+/*estilos responsivos*/
+
+@media (max-width:906px) {
+    .titulo1 {
+        display: none;
+    }
+
+    nav ul li ul {
+        display: none;
+        position: none;
+        visibility: 0;
+        opacity: 0;
+    }
+
+    .menu>nav>ul>li:hover>ul {
+        display: none;
+    }
+
+    .titulo2 {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+    }
+
+    .menu nav .li1 {
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .card-text {
+        padding-top: 0px;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: auto;
+    }
+
+    .h2 {
+        padding-top: 200px;
+    }
+
+    .contenido-explicacion {
+        font-size: 16px;
+        margin: 0px;
+        width: auto;
+    }
+
+    .imgin {
+        width: 200px;
+    }
+
+    .contenido-explicacion .definiciones .pasantia h2 {
+        margin: 0;
+        text-align: center;
+        color: #fff;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .cent {
+        margin: 0;
+    }
+
+    .card-image img {
+        width: 100px;
+        height: auto;
+        margin: 5px;
+        border-radius: 8px;
+    }
+
+
+    .logs {
+        padding: 20px;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .logs img {
+        width: 80px;
+        margin: 5px;
+    }
+
+    .group {
+        margin: 0;
+    }
+
+    .div-container-modal {
+        width: 320px;
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    .modal {
+        width: 100vw;
+        height: 100vh;
+        padding: 50px;
+    }
+
+    .div-container-modal {
+        width: auto;
+        height: 200px;
+        background-color: #fff;
+    }
+}
+
+
+/* Error 404 */
+
+.err {
+    background-color: #535050;
+    color: #fff;
+}
+
+.err h2 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.err h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-container {
+    background-image: url(../img/encargados/p.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* encargados */
+
+.bacimg {
+    background-color: #1a1818d5;
+    height: 100vh;
+}
+
+.container__card {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    /* perspective: 10px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card__father {
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card__father:hover .card {
+    transform: rotateY(180deg);
+}
+
+
+.card {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.card__front {
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card__front,
+.card__back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+.card__back {
+    transform: rotateY(180deg);
+    background: white;
+}
+
+.body__card_front {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateZ(60px);
+}
+
+.body__card_front h1 {
+    color: #fff;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.body__card_back {
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+}
+
+.body__card_back p {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+
+.contenedort {
+    display: flex;
+    margin: 20px;
+}
+
+.titulo-area {
+    width: 600px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+}
+
+.hora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.horario {
+    margin: 100px;
+}
+
+.control {
+    width: 40%;
+}
+
+.control p {
+    margin: 5px;
+}
+
+.horario h1 {
+    text-align: center;
+    width: 450px;
+}
+
+.text-hora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pe {
+    width: 500px;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.cabecera {
+    text-align: center;
+    color: #000;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(229, 232, 236);
+    transition: all 2s ease;
+}
+
+.contp {
+    border-right: solid 1px rgb(206, 209, 212);
+}
+
+.pp p {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.p {
+    margin: 40px;
+}
+
+.p img {
+    width: 400px;
+    height: 400px;
+}
+
+.p {
+    width: 900px;
+    margin: auto;
+    /* font-size: 20px; */
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dado {
+    padding: 30px;
+    margin: 20px;
+}
+
+.pp p {
+    border-bottom: solid 1px rgb(206, 209, 212);
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista ol {
+    margin: 20px;
+}
+
+.lista-empresa h2 {
+    text-align: center;
+    margin: 40px;
+}
+
+.req {
+    margin: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.requisitos {
+    margin: auto;
+    width: 700px;
+    font-size: 25px;
+}
+
+.descrip {
+    text-align: center;
+}
+
+.container-desa h1{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+/* .pesca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.dat{
+    width: 400px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    border-bottom: solid 0.1px #7e7e7e;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 20px;
+}
+.dat .name h2{
+    text-align: center;
+}
+.dat .img img{
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    border-radius: 50%;
+}
+
+.cont-datt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.scrum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dddd{
+    margin: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.socioh{
+    text-align: center;
+    margin: 30px;
+}
+
+.especial{
+    margin-top: -100px;
+}
