@@ -1,5 +1,5 @@
-window.onload = function(){
-  var typed = new Typed('.typed', {
+window.onload = function(){ 
+  var typed = new Typed('.typed', {// constante del header del inicion efecto escritura
     strings: [
     '¡Bienvenid@s! a Pasantías e Involucración con las empresas y Horas sociales.'],
     typeSpeed: 80,
@@ -12,6 +12,7 @@ window.onload = function(){
      if (document.getElementById('close')) {
         btn.onclick = function(){
             modal.style.display = 'none';
+          // modal
         }
     }
     console.info("¡No Pegues nada aquí!, puede que te esten engañando") 
@@ -21,7 +22,7 @@ window.addEventListener('scroll', function() {
     var menu = document.getElementById('menu');
 
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  
+  // menu
     if (scrolled > 0) {
       menu.style.backgroundColor = "#333";
     } else {
